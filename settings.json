@@ -1,0 +1,67 @@
+{
+    "rsp-ui.enableStartServerOnActivation": [
+        {
+            "id": "redhat.vscode-community-server-connector",
+            "name": "Community Server Connector",
+            "startOnActivation": true
+        }
+    ],
+    "redhat.telemetry.enabled": true,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "editor.minimap.enabled": false,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.sneak": true,
+    "vim.foldfix": true,
+    "vim.visualModeKeyBindings": [
+        { "before": [">"], "after": [">", "g", "v"] }, 
+        { "before": ["<"], "after": ["<", "g", "v"] }, 
+        { "before": ["<leader>", "c", "p"], "after": ["y", "P", "g", "v"] }, 
+        { "before": [ "<leader>", "s", "v"], "commands": [ ":yank", "/", "<C-r>", "0"] },
+    ],
+    "vim.insertModeKeyBindings": [
+        { "before": [ "j", "j" ], "after": [ "<Esc>" ] }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        { "before": [ ">" ], "after": ["v",">","g","v"] },
+        { "before": [ "<" ], "after": ["v","<","g","v"] },
+        { "before": [ "<leader>", "p", "\""], "after": ["v", "i", "\"", "\"", "-", "d", "P"] },
+        { "before": [ "<leader>", "p", "w"], "after": ["v", "i", "w", "\"", "-", "d", "P"] },
+        { "before": [ "<leader>", "p", ")"], "after": ["v", "i", ")", "\"", "-", "d", "P"] },
+        { "before": [ "<leader>", "p", "("], "after": ["v", "i", ")", "\"", "-", "d", "P"] },
+        { "before": [ "<C-c>" ], "commands": [ ":nohl" ], "silent": true },
+        { "before": [ "K" ], "commands": [ "lineBreakInsert" ], "silent": true },
+        { "before": [ "<leader>", "f", "o"], "commands": ["editor.toggleFold"]},
+        { "before": [ "g", "b" ], "commands": ["workbench.action.navigateBack"]},
+        { "before": [ "g", "f" ], "commands": ["workbench.action.navigateForward"]},
+        { "before": [ "g", "l" ], "commands": ["workbench.action.navigateLast"]},
+        // { "before": [ "<leader>", "g", "d" ], "commands": ["editor.action.revealDefinition"]},
+        { "before": [ "<leader>", "h", "v"], "commands": ["editor.action.showDefinitionPreviewHover"]},
+        { "before": [ "<leader>", "o", "f"], "commands": ["git.openFile"]},
+        { "before": [ "<leader>", "o", "c"], "commands": ["git.openChange"]},
+        { "before": [ "<leader>", "r", "v"], "commands": ["git.revertSelectedRanges"]},
+   ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": true,
+        "<C-f>": false,
+        "<C-h>": false,
+        "<C-v>": false,
+        "<C-w>": false
+    },
+    "remote.SSH.configFile": "~/.ssh/config",
+    "settingsSync.ignoredSettings": [
+        "remote.SSH.configFile"
+    ],
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "workbench.editor.wrapTabs": true,
+    "vim.smartRelativeLine": true,
+    "diffEditor.renderSideBySide": false
+}
